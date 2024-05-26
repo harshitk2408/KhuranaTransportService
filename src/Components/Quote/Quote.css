@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.darkbg{
+    width: 100vw;
+    height: 55vh;
+    z-index: -1;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: row;
+}
+.darkbg h1{
+  z-index: 2;
+  color: white;
+  width: 50vw;
+  padding-left: 10vw;
+  padding-top: 9vh;
+  font-size:4vw;
+}
+.darkbg img{
+    height: 55vh;
+    width: 50vw;
+    position: relative;
+}
+#quotecont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    position: relative;
+}
+.contact-form-cont{
+    display: flex;
+    flex-direction:row;
+    width: 80vw;
+    justify-content: space-between;
+    height:40vh;
+    overflow:visible;
+    position: absolute;
+    top:30vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.form-header{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    gap:30vw;
+    align-items: center;
+    padding-top: 1vh;
+    padding-left: 5vw;
+    font-size: 1vw;
+}
+.contact-info{
+    background-color:rgb(57, 57, 57);
+    width: 24vw;
+    height: 40vh;
+    gap:5vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.contact-info p{
+  padding-top: 3vh;
+  font-size: 0.9vw;
+}
+.contact-form{
+    width: 56vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content:space-around;
+    align-items: center;
+    border-radius:20px;
+    font-size: 0.9vw;
+}
+.card-list{
+  display: grid;
+  grid-template-columns: auto auto;  
+  align-items:center;
+  height: 22.5vh;
+  width: 44.8vw;
+  column-gap:5.6vw ;
+}
+.sub-button {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bold;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+  --color: #39393a;
+  width: 12vw;
+  text-align: center;
+  padding: 0.8vw 1.7vw;
+  background-color: transparent;
+  border-radius: 1vw;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-size: 1vw;
+  border: 1px solid;
+  color: var(--color);
+  z-index: 1;
+ }
+ 
+ .sub-button::before, .sub-button::after {
+  content: '';
+  display: block;
+  width: 3vw;
+  height: 3vw;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+ 
+ .sub-button::before {
+  top: -1vw;
+  left: -1vw;
+ }
+ 
+ .sub-button::after {
+  left: calc(100% + 1vw);
+  top: calc(100% + 1vw);
+ }
+ 
+ .sub-button:hover::before, .sub-button:hover::after {
+  height: 30vh;
+  width: 30vw;
+ }
+ 
+ .sub-button:hover {
+  color: rgb(226, 226, 226);
+ }
+ 
+ .sub-button:active {
+  filter: brightness(.8);
+ }
+ .cont-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27vw;
+  height:22.5vh;
+ }
+ .cont-details div{
+  display: flex;
+  flex-direction: row;
+  width:22.5vw;
+  gap:1vw;
+  height: 6vh;
+  font-size: 0.8vw;
+ }
+ .cont{
+  padding-left: 5vw;
+ }
+ .cont-details a{
+  color: white;
+ }
+ .cont-details .logos{
+  justify-content: center;
+ }
+ .soc-logo{
+  width:2.3vw;
+  height: 2.3vh;
+ }
+ @media screen and (max-width:480px){
+  .darkbg{
+    height: 30vh;
+  }
+  .darkbg h1{
+    font-size: 6.5vw;
+    padding-left:5vw;
+  }
+  .darkbg img{
+    height:20vh;
+    width: 50vw;
+  }
+  .card-list{
+    display: flex;
+    flex-direction: column;
+    gap:3.5vh;
+    justify-content: center;
+    align-items: center;
+    width: 52vw;
+  }
+  .contact-info{
+    display: none;
+  }
+  .contact-form-cont{
+    top:17vh;
+    width: 90vw;
+    justify-content: center;
+  }
+  .form-header{
+    font-size: 4vw;
+    width: 80vw;
+    padding-left:0vw;
+    gap:18vw;
+  }
+  .sub-button{
+    width: 15vw;
+    height: 2vh;
+    font-size: 3vw;
+    border-radius: 20px;
+  }
+  #quotecont{
+    height:65vh;
+  }
+}

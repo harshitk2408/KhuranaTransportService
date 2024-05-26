@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+#services-cont{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    gap:3vh;
+    width: 95vw;
+    margin-bottom: 10vh;
+}
+#services-cont h1{
+    font-weight: bold;
+    text-align: left;
+    width: 95vw;
+}
+.ser-text{
+    width: 57vw;
+}
+.serv-card{
+    display: flex;
+    flex-direction:row;
+    gap:8vw;
+}
+.serv-card-mobile{
+    display: none;
+}
+.ser-img{
+    height: 30vh;
+    width: 25vw;
+}
+.ser-img img{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width:480px) {
+    .serv-card{
+        display: none;
+    }
+    .serv-card-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:4vh;
+    }
+    .ser-text{
+        /* text-align: center; */
+        width: 86vw;
+    }
+    .ser-img{
+        width: 70vw;
+    }
+    #services-cont{
+        padding: 0;
+        gap:9vh;
+        width: 100vw;
+    }
+    #services-cont h1{
+        text-align: center;
+        width: 100vw;
+    }
+}
