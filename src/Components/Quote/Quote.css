@@ -49,10 +49,10 @@
     display: flex;
     flex-direction: row;
     width: 50vw;
-    gap:30vw;
+    gap:20vw;
     align-items: center;
     padding-top: 1vh;
-    padding-left: 5vw;
+    padding-left: 2.5vw;
     font-size: 1vw;
 }
 .contact-info{
@@ -179,6 +179,9 @@
   .darkbg{
     height: 30vh;
   }
+  .form-header{
+    justify-content: center;
+  }
   .darkbg h1{
     font-size: 6.5vw;
     padding-left:5vw;
@@ -211,7 +214,7 @@
   }
   .sub-button{
     width: 15vw;
-    height: 2vh;
+    height: 3vh;
     font-size: 3vw;
     border-radius: 20px;
   }

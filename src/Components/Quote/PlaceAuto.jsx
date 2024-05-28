@@ -4,15 +4,15 @@ import "./PlaceAuto.css";
 import { MyContext } from "../../MyContext";
 const libraries = ["places"];
 const PlaceAuto = (props) => {
+  const apiKey = import.meta.env.VITE_API_GOOGLE_API_KEY;
   const { detail, setDetails } = useContext(MyContext);
   const inputRef = useRef();
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey:"AIzaSyBE4qEJXaU6X_rNCUfx2vfMEf2smwCnVaM",
+    googleMapsApiKey:apiKey,
     libraries,
   });
 
   const handlePlaceChanged = () => {
-    console.log("change");
     const [place] = inputRef.current.getPlaces();
     if (place) {
       console.log(place.formatted_address);
@@ -24,7 +24,6 @@ const PlaceAuto = (props) => {
       });
     }
   };
-
   return (
     isLoaded && (
       <div className="place-auto">

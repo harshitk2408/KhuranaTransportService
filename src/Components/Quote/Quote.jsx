@@ -22,7 +22,6 @@ export default function Quote() {
         <div className="contact-form">
           <div className="form-header">
             <h2 style={{"height":"fit-content"}}>Send us a Message</h2>
-            <svg width="5vw" height="5vh" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 4L3 11L10 14M20 4L13 21L10 14M20 4L10 14" stroke="#000000" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
           </div>
           <div className="card-list">
             <Cards name={"Enter Name"} val="name"/>
