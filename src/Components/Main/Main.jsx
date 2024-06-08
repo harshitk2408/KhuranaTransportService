@@ -8,20 +8,7 @@ export default function Main() {
     <div id="mainpage">
       <div className="mainpage-upper">
         <div className="main-text">
-          <Typewriter
-            className="laptop"
-            options={{
-              cursor: "",
-              delay: 40,
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  'Seamless Delivery Service: <br/> Where <span style="color: #5ae4a7;">Trust</span> Meets </br><span style="color: #5ae4a7;">Efficiency</span>'
-                )
-                .start();
-            }}
-          />
+        Seamless Delivery Service: <br/> Where <span style={{'color': "#5ae4a7"}}>Trust</span> Meets <br/><span style={{"color": "#5ae4a7"}}>Efficiency</span>
         </div>
         <div className="animat">
           <dotlottie-player
@@ -33,22 +20,6 @@ export default function Main() {
             playMode="normal"
             loop
             autoplay
-          />
-        </div>
-        <div className="main-text-mobile">
-          <Typewriter
-            className="laptop"
-            options={{
-              cursor: "",
-              delay: 40,
-            }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  'Seamless Delivery Service: Where <span style="color: #5ae4a7;">Trust</span> Meets <span style="color: #5ae4a7;">Efficiency</span>'
-                )
-                .start();
-            }}
           />
         </div>
       </div>

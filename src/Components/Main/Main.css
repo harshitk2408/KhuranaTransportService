@@ -2,20 +2,18 @@
 .mainpage-upper{
     display: flex;
     flex-direction: row;
-    height: 60vh;
-    justify-content: space-between;
-    width: 100vw;
-}
-.mainpage-upper .main-text-mobile{
-    display: none;
+    height: 30em;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 #mainpage{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:90vh;
-    width: 100vw;
+    height:50em;
+    width: 100%;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight:bold;
@@ -23,11 +21,10 @@
     font-variation-settings:"slnt" 0;
 }
 .main-text{
-    width: 50vw;
-    font-size:1.6vw;
-    position: relative;
-    align-content: center;
-    padding-left: 5vw;
+    width: 50%;
+    height: 5em;
+    font-size:2.4em;
+    text-align:center;
 }
 .main-text h1{
     position: absolute;
@@ -35,14 +32,11 @@
     top:25vh;
 }
 .animat{
-    width: 37vw;
-}
-.Typewriter{
-    font-size: 3vw;
-    width: fit-content;
+    width: 50%;
+    height: 35em;
 }
 .mainpage-lower{
-    width: 50vw;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,38 +57,29 @@
     align-items: center;
 }
 @media screen and (max-width:481px) {
+    #mainpage{
+        height:100%;
+    }
     .mainpage-upper{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 80%;
+        justify-content: inherit;
     }
     .main-text{
-        display: none;
-    }
-    .mainpage-upper .main-text-mobile{
-        display:block;
-        padding-left: 2vh;
-        padding-right:2vh;
-        text-align: center;
-        height:5vh;
-    }
-    .Typewriter{
-        font-size: 5vw;
-    }
-    #mainpage{
-        height: 90vh;
+        width: 100%;
+        font-size: 1.5em;
+        order: 2;
+        text-align:center;
     }
     .animat{
-        width: 80vw;
-        height: 36vh;
+        width: 100%;
+        height: 55%;
     }
     .mainpage-lower{
-        flex-direction: column;
-        width: 100vw;
-        gap:2vh;
-        font-size:3vw;
+        width: 90%;
+        font-size: 0.9em;
     }
     .mainpage-lower .logo{
-        width: 7vw;
+        width: 2.7em;
     }
 }

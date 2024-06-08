@@ -10,6 +10,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 export default function Quote() {
   const { detail, setDetails } = useContext(MyContext);
   return (
@@ -36,7 +37,7 @@ export default function Quote() {
           <div className="cont-details">
             <div className="cont">
               <FaLocationDot className="loc-logo"/>
-              <a href="https://www.google.com/maps/place/Khurana+Transport+Service+%26+Packers+and+Movers/@28.6558124,77.2684822,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfcbd2ce645b9:0x1335f3458d5fbe89!8m2!3d28.6558125!4d77.2733531!16s%2Fg%2F11b76c4nb0?entry=ttu">2/1, Main road, Geeta Colony, Delhi 110031</a>
+              <a href="https://www.google.com/maps/place/Khurana+Transport+Service+%26+Packers+and+Movers/@28.6558124,77.2684822,17z/data=!3m1!4b1!4m6!3m5!1s0x390cfcbd2ce645b9:0x1335f3458d5fbe89!8m2!3d28.6558125!4d77.2733531!16s%2Fg%2F11b76c4nb0?entry=ttu" target="_blank">2/1, Main road, Geeta Colony, Delhi 110031</a>
             </div>
             <div className="cont">
               <CiPhone className="phone-logo" />
@@ -48,9 +49,9 @@ export default function Quote() {
               <a href="mailto:khuranatransportservice@gmail.com">khuranatransportservice@gmail.com</a>
             </div>
             <div className="logos">
-              <FaLinkedin className="soc-logo"/>
-              <FaXTwitter className="soc-logo"/>
-              <FaInstagram className="soc-logo"/>
+              <a href="https://www.linkedin.com/in/khurana-transport-service-9aa33a234/" target="_blank"><FaLinkedin className="soc-logo"/></a>
+              <a href=""><FaXTwitter className="soc-logo"/></a>
+              <a href="https://www.instagram.com/khuranatransportservice/" target="_blank"><FaInstagram className="soc-logo"/></a>
             </div>
           </div>
         </div>
