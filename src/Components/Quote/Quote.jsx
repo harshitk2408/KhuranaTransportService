@@ -30,7 +30,7 @@ export default function Quote() {
             <PlaceAuto name="Pick Up Location" val="src"/>
             <PlaceAuto name="Drop Location" val="dest"/>
           </div>
-          <a href={`sms:919211327197;?&body=Name - ${detail.name} %0aPhone - ${detail.phoneno}%0aFrom : ${detail.src}%0aTo : ${detail.dest}`} className="sub-button"> Submit</a>
+          <a href={`https://api.whatsapp.com/send?phone=919212110257&text=Name - ${detail.name} %0aPhone - ${detail.phoneno}%0aFrom : ${detail.src}%0aTo : ${detail.dest}`} className="sub-button"> Submit</a>
         </div>
         <div className="contact-info">
           <p>Contact Information</p>
